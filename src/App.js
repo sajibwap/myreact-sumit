@@ -2,6 +2,8 @@ import React from 'react';
 import Bracket from './Components/Composition/Bracket';
 import Emoji from './Components/Composition/Emoji';
 import Text from './Components/Composition/Text';
+import Click from './Components/Hoc/clickCounter';
+import Hover from './Components/Hoc/hoverCounter';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {
@@ -18,6 +20,8 @@ class App extends React.Component {
                         </Bracket>
                     )}
                 </Emoji>
+                <Click />
+                <Hover />
             </div>
         );
     }
